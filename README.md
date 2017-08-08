@@ -1,38 +1,31 @@
 # Emaily
-MERN stack application for sending survey emails to gather user feedback.
 
-
-
-
-<!-- # Early Bird
-
-Early Bird is a decoupled web application that uses the Yelp API to help developers find potential freelance opportunities. This particular repository contains the ReactJS front end for Early Bird. This ReactJS application communicates with a back end Rails API to fetch and display search results for the user.
+Emaily is a MERN stack application for sending survey emails to gather user feedback. Through the use of OAuth, users can sign up for Emaily with their Google account. Emaily makes use of the Stripe API to handle user payments and the SendGrid API to handle the email functionality.
 
 ## How It Works
 
-- User enters a search term and location
-- Early Bird queries the Yelp API for businesses matching these search parameters
-- A website grading algorithm determines if any these businesses could use help from a developer
-- A list of businesses that could use some website help is returned to the user
-- User can now reach out to these businesses and potentially land a freelance gig
+- User signs up with their Google account
+- User adds credits through Stripe in order to send out email surveys
+- User creates survey and sends it to desired recipients
+- Survey responses are tracked in order to provide the user with useful feedback
+- User can refer to their list of surveys in order to gather and analyze feedback
 
 ## Usage
 
-Early Bird is hosted on Heroku and can be accessed [here](https://early-bird-react-js.herokuapp.com/). Upon loading the site, the user will be greeted with a search form.
+After logging in through their Google account, users are greeted with a list of surveys that they have sent out.
 
-![Search](./search.png 'Search')
+![Survey List](./survey-list.png 'Survey List')
 
-After the user enters appropriate search terms, the application will begin fetching the relevant results.
+Users can add more credits in order to send out more surveys.
 
-![Loading](./loading.png 'Loading')
+![Add Credits](./add-credits.png 'Add Credits')
 
-Once the search results have been fetched, they will be displayed to the user.
+Users can specify the content and recipients when creating surveys.
 
-![Results](./results.png 'Results')
+![Survey Form](./survey-form.png 'Survey Form')
 
-The user can then navigate to each business's Yelp page and reach out for potential freelance opportunities.
+Survey results will be tracked and added to the user's list of surveys.
 
 ## License
 
-Early Bird is licensed under the MIT License - see [LICENSE.txt](./LICENSE.txt) for details.
- -->
+Emaily is licensed under the MIT License - see [LICENSE.txt](./LICENSE.txt) for details.
